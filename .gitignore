@@ -1,3 +1,8 @@
+# !!!
+# For the sake of this demo, `.env*.local` is not included in .gitignore
+# Please don't do this for a real project
+# !!!
+
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -26,7 +31,8 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
-.env*.local
+# THIS SHOULD NOT BE COMMENTED OUT ON A REAL APP
+# .env*.local
 
 # vercel
 .vercel
