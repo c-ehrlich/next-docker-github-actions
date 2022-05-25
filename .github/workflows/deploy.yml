@@ -54,6 +54,6 @@ jobs:
           script: |
             docker login ghcr.io -u $GITHUB_USERNAME -p $GITHUB_TOKEN
             docker pull ghcr.io/c-ehrlich/next-docker-github-actions/next_test_image:latest
-            docker stop containername
+            docker stop next-test-app
             docker system prune -f
-            docker run --name containername -dit -p 3000:3000 ghcr.io/c-ehrlich/next-docker-github-actions/next_test_image:latest
+            docker run --name next-test-app -dit -p 12345:3000 ghcr.io/c-ehrlich/next-docker-github-actions/next_test_image:latest
