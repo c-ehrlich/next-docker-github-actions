@@ -30,7 +30,6 @@ jobs:
           NEXT_PUBLIC_BACKEND_URL: ${{ secrets.APP_NEXT_PUBLIC_BACKEND_URL }}
           NEXT_PUBLIC_META_API_KEY: ${{ secrets.APP_NEXT_PUBLIC_META_API_KEY }}
         with:
-          # TODO figure out what `my_image_name` is
           name: c-ehrlich/next-docker-github-actions/next_test_image
           registry: ghcr.io
           username: ${{ secrets.USERNAME }}
@@ -50,7 +49,7 @@ jobs:
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_KEY }}
           envs: GITHUB_USERNAME, GITHUB_TOKEN
-          # TODO does containername need to be custom?
+          # TODO update APT and install Docker from the script so we don't need to do it manually on the server
           script: |
             docker login ghcr.io -u $GITHUB_USERNAME -p $GITHUB_TOKEN
             docker pull ghcr.io/c-ehrlich/next-docker-github-actions/next_test_image:latest
