@@ -1,5 +1,8 @@
 # Next-Docker-Github-Actions
 
+![Deployment Screenshot](https://user-images.githubusercontent.com/8353666/170532989-2134cc87-61ee-4d5f-b35b-be082c8d97f9.png)
+(note: this is no longer live because it's the only thing I was using that VPS for)
+
 ## What is this?
 This is a sample repo for desting continuous deployment of a Next.js app to a VPS (Hetzner in this case, but could be any) using GitHub Actions
 
