@@ -14,6 +14,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Hello world</h1>
+        <p>env variable: { process.env.NEXT_PUBLIC_META_API_KEY }</p>
       </main>
     </div>
   );
